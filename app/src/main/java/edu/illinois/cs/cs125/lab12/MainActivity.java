@@ -3,7 +3,8 @@ package edu.illinois.cs.cs125.lab12;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-
+import android.view.View;
+import android.widget.Button;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -39,8 +40,16 @@ public final class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         startAPICall();
-    }
 
+        final Button startAPICall = findViewById(R.id.updateWeather);
+        startAPICall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                Log.d(TAG, "Start API button clicked");
+                startAPICall();
+            }
+        });
+    }
     /**
      * Run when this activity is no longer visible.
      */
