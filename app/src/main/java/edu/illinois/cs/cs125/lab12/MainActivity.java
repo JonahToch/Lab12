@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -73,6 +75,8 @@ public final class MainActivity extends AppCompatActivity {
                         public void onResponse(final JSONObject response) {
                             try {
                                 Log.d(TAG, response.toString(2));
+                                final TextView helloTextView = (TextView) findViewById(R.id.updateWeather);
+                                helloTextView.setText(R.id.toString);
                             } catch (JSONException ignored) { }
                         }
                     }, new Response.ErrorListener() {
