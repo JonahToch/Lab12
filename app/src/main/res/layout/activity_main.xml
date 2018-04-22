@@ -12,29 +12,40 @@
         android:id="@+id/Question"
         android:layout_width="match_parent"
         android:layout_height="192dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:text="                             Score 0
+
+           Question"
+        android:textSize="32dp"/>
 
     <Button
         android:id="@+id/updateWeather"
         android:layout_width="match_parent"
-        android:layout_weight="1" />
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:text="Correct Answer"
+        tools:background="@android:color/holo_green_light" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
+        android:layout_height="1dp"
         android:layout_weight="1"
-        android:text="" />
+        android:text="Answer 2" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
+        android:layout_height="1dp"
         android:layout_weight="1"
-        android:text="" />
+        android:text="Incorrect chosen answer + 0 points"
+        tools:background="@android:color/holo_red_dark" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
+        android:layout_height="1dp"
         android:layout_weight="1"
-        android:text="" />
+        android:text="Answer 4" />
 
 </LinearLayout>

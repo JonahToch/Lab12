@@ -75,8 +75,6 @@ public final class MainActivity extends AppCompatActivity {
                         public void onResponse(final JSONObject response) {
                             try {
                                 Log.d(TAG, response.toString(2));
-                                final TextView helloTextView = (TextView) findViewById(R.id.updateWeather);
-                                helloTextView.setText(R.id.toString);
                             } catch (JSONException ignored) { }
                         }
                     }, new Response.ErrorListener() {
