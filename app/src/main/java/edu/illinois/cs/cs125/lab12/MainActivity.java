@@ -1,4 +1,5 @@
 package edu.illinois.cs.cs125.lab12;
+package edu.illinois.cs.cs125.mp6.lib;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,13 +17,17 @@ import com.android.volley.toolbox.Volley;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.json.JSONArray;
+import com.google.gson.*;
+
+import java.lang.reflect.Array;
 
 /**
  * Main class for our UI design lab.
  */
 public final class MainActivity extends AppCompatActivity {
     /** Default logging tag for messages from the main activity. */
-    private static final String TAG = "Lab1:Main";
+    private static final String TAG = "MP7";
 
     /** Request queue for our API requests. */
     private static RequestQueue requestQueue;
@@ -43,12 +48,47 @@ public final class MainActivity extends AppCompatActivity {
 
         startAPICall();
 
-        final Button startAPICall = findViewById(R.id.updateWeather);
+        final Button startAPICall = findViewById(R.id.answerA);
         startAPICall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                Log.d(TAG, "Start API button clicked");
-                startAPICall();
+                Log.d(TAG, "Grab the JSON and store it");
+            }
+        });
+        final TextView chooseQuestion = findViewById(R.id.question);
+        JsonParser parser = new JsonParser();
+        JsonObject results = parser.parse("https://opentdb.com/api.php?amount=50&difficulty=medium&type=multiple").getAsJsonObject().getAsJsonObject("results");
+        JsonArray questions = results.getAsJsonArray("question");
+        String questionString = questions.getAsJsonObject().getAsString();
+
+
+
+        final Button chooseAnswerA = findViewById(R.id.answerA);
+        startAPICall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                Log.d(TAG, "Answer A selected");
+            }
+        });
+        final Button chooseAnswerB = findViewById(R.id.answerB);
+        startAPICall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                Log.d(TAG, "Answer B selected");
+            }
+        });
+        final Button chooseAnswerC = findViewById(R.id.answerC);
+        startAPICall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                Log.d(TAG, "Answer C selected");
+            }
+        });
+        final Button chooseAnswerD = findViewById(R.id.answerD);
+        startAPICall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                Log.d(TAG, "Answer D selected");
             }
         });
     }
@@ -67,8 +107,7 @@ public final class MainActivity extends AppCompatActivity {
         try {
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                     Request.Method.GET,
-                    "http://api.openweathermap.org/data/2.5/weather?zip=61820,us&appid="
-                            + BuildConfig.API_KEY,
+                    "https://opentdb.com/api.php?amount=50&difficulty=medium&type=multiple",
                     null,
                     new Response.Listener<JSONObject>() {
                         @Override
