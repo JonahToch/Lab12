@@ -1,8 +1,8 @@
 package edu.illinois.cs.cs125.lab12;
-package edu.illinois.cs.cs125.mp6.lib;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.JsonReader;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -17,7 +17,7 @@ import com.android.volley.toolbox.Volley;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.json.JSONArray;
+
 import com.google.gson.*;
 
 import java.lang.reflect.Array;
@@ -26,10 +26,14 @@ import java.lang.reflect.Array;
  * Main class for our UI design lab.
  */
 public final class MainActivity extends AppCompatActivity {
-    /** Default logging tag for messages from the main activity. */
+    /**
+     * Default logging tag for messages from the main activity.
+     */
     private static final String TAG = "MP7";
 
-    /** Request queue for our API requests. */
+    /**
+     * Request queue for our API requests.
+     */
     private static RequestQueue requestQueue;
 
     /**
@@ -48,19 +52,19 @@ public final class MainActivity extends AppCompatActivity {
 
         startAPICall();
 
-        final Button startAPICall = findViewById(R.id.answerA);
+        final Button startAPICall = findViewById(R.id.answerC);
         startAPICall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
                 Log.d(TAG, "Grab the JSON and store it");
             }
         });
+
         final TextView chooseQuestion = findViewById(R.id.question);
         JsonParser parser = new JsonParser();
-        JsonObject results = parser.parse("https://opentdb.com/api.php?amount=50&difficulty=medium&type=multiple").getAsJsonObject().getAsJsonObject("results");
-        JsonArray questions = results.getAsJsonArray("question");
-        String questionString = questions.getAsJsonObject().getAsString();
-
+        // JsonObject results = parser.parse("triviatext").getAsJsonObject(); this line does not work yet. try to get parsing to work whether it is from the website API or from triviatext.txt under app in documents.
+        // JsonArray questions = results.getAsJsonArray("question");
+        // String questionString = questions.get(0).getAsJsonObject().getAsString();
 
 
         final Button chooseAnswerA = findViewById(R.id.answerA);
@@ -77,13 +81,7 @@ public final class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "Answer B selected");
             }
         });
-        final Button chooseAnswerC = findViewById(R.id.answerC);
-        startAPICall.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(final View v) {
-                Log.d(TAG, "Answer C selected");
-            }
-        });
+
         final Button chooseAnswerD = findViewById(R.id.answerD);
         startAPICall.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,6 +90,7 @@ public final class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     /**
      * Run when this activity is no longer visible.
      */
@@ -114,14 +113,15 @@ public final class MainActivity extends AppCompatActivity {
                         public void onResponse(final JSONObject response) {
                             try {
                                 Log.d(TAG, response.toString(2));
-                            } catch (JSONException ignored) { }
+                            } catch (JSONException ignored) {
+                            }
                         }
                     }, new Response.ErrorListener() {
-                        @Override
-                        public void onErrorResponse(final VolleyError error) {
-                            Log.e(TAG, error.toString());
-                        }
-                    });
+                @Override
+                public void onErrorResponse(final VolleyError error) {
+                    Log.e(TAG, error.toString());
+                }
+            });
             requestQueue.add(jsonObjectRequest);
         } catch (Exception e) {
             e.printStackTrace();

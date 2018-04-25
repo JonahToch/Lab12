@@ -1,0 +1,605 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Entertainment: Musicals & Theatres",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "When was the play &#039;Macbeth&#039; written?",
+      "correct_answer": "1606",
+      "incorrect_answers": [
+        "1605",
+        "1723",
+        "1628"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who is the artist of the recent new album the Uncanny Valley?",
+      "correct_answer": "Perturbator",
+      "incorrect_answers": [
+        "Carpenter Brut",
+        "GOST",
+        "Dan Terminus "
+      ]
+    },
+    {
+      "category": "Vehicles",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What was the name of the first front-wheel-drive car produced by Datsun (now Nissan)?",
+      "correct_answer": "Cherry",
+      "incorrect_answers": [
+        "Sunny",
+        "Bluebird",
+        "Skyline"
+      ]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Velma Kelly and Roxie Hart are the protagonists of which Oscar winning movie?",
+      "correct_answer": "Chicago",
+      "incorrect_answers": [
+        "Dreamgirls",
+        "Cabaret",
+        "All That Jazz"
+      ]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which actor played the main character in the 1990 film &quot;Edward Scissorhands&quot;?",
+      "correct_answer": "Johnny Depp",
+      "incorrect_answers": [
+        " Clint Eastwood",
+        "Leonardo DiCaprio",
+        "Ben Stiller"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which video game earned music composer Mike Morasky the most awards for his work?",
+      "correct_answer": "Portal 2",
+      "incorrect_answers": [
+        "Left 4 Dead 2",
+        "Team Fortress 2",
+        "Counter-Strike: Global Offensive"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the Morse code, which letter is indicated by 3 dots? ",
+      "correct_answer": "S",
+      "incorrect_answers": [
+        "O",
+        "A",
+        "C"
+      ]
+    },
+    {
+      "category": "Entertainment: Books",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "By what nickname is Jack Dawkins known in the Charles Dickens novel, &#039;Oliver Twist&#039;?",
+      "correct_answer": "The Artful Dodger",
+      "incorrect_answers": [
+        "Fagin",
+        "Bull&rsquo;s-eye",
+        "Mr. Fang"
+      ]
+    },
+    {
+      "category": "Geography",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What are the four corner states of the US?",
+      "correct_answer": "Utah, Colorado, Arizona, New Mexico",
+      "incorrect_answers": [
+        "Oregon, Idaho, Nevada, Utah",
+        "Kansas, Oklahoma, Arkansas, Louisiana",
+        "South Dakota, Minnesota, Nebraska, Iowa"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In what year was the original Sonic the Hedgehog game released?",
+      "correct_answer": "1991",
+      "incorrect_answers": [
+        "1989",
+        "1993",
+        "1995"
+      ]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In what year was the first Transformers movie released?",
+      "correct_answer": "1986",
+      "incorrect_answers": [
+        "2007",
+        "1984",
+        "2009"
+      ]
+    },
+    {
+      "category": "Science: Computers",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What did the name of the Tor Anonymity Network orignially stand for?",
+      "correct_answer": "The Onion Router",
+      "incorrect_answers": [
+        "The Only Router",
+        "The Orange Router",
+        "The Ominous Router"
+      ]
+    },
+    {
+      "category": "Science & Nature",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which psychological term refers to the stress of holding contrasting beliefs?",
+      "correct_answer": "Cognitive Dissonance",
+      "incorrect_answers": [
+        "Flip-Flop Syndrome",
+        "Split-Brain",
+        "Blind Sight"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In which city did American rap producer DJ Khaled originate from?",
+      "correct_answer": "Miami",
+      "incorrect_answers": [
+        "New York",
+        "Detroit",
+        "Atlanta"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In which order do you need to hit some Deku Scrubs to open the first boss door in &quot;Ocarina of Time&quot;?",
+      "correct_answer": "2, 3, 1",
+      "incorrect_answers": [
+        "1, 2, 3",
+        "1, 3, 2",
+        "2, 1, 3"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name the location-based augmented reality game developed by Niantic before Pok&eacute;mon GO?",
+      "correct_answer": "Ingress",
+      "incorrect_answers": [
+        "Aggress",
+        "Regress",
+        "Digress"
+      ]
+    },
+    {
+      "category": "Science: Computers",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which of these is the name for the failed key escrow device introduced by the National Security Agency in 1993?",
+      "correct_answer": "Clipper Chip",
+      "incorrect_answers": [
+        "Enigma Machine",
+        "Skipjack",
+        "Nautilus"
+      ]
+    },
+    {
+      "category": "History",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which of these countries was NOT a part of the Soviet Union?",
+      "correct_answer": "Afghanistan",
+      "incorrect_answers": [
+        "Turkmenistan",
+        "Kazakhstan",
+        "Uzbekistan"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "EDM record label Monstercat is based in which country?",
+      "correct_answer": "Canada",
+      "incorrect_answers": [
+        "United States",
+        "Australia",
+        "United Kingdom"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which of these is NOT a song on The Beatles&#039; 1968 self titled album, also known as the White album?",
+      "correct_answer": "Being For The Benefit Of Mr. Kite!",
+      "incorrect_answers": [
+        "Why Don&#039;t We Do It in the Road?",
+        "Everybody&#039;s Got Something to Hide Except Me and My Monkey",
+        "The Continuing Story of Bungalow Bill"
+      ]
+    },
+    {
+      "category": "Science: Computers",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "While Apple was formed in California, in which western state was Microsoft founded?",
+      "correct_answer": "New Mexico",
+      "incorrect_answers": [
+        "Washington",
+        "Colorado",
+        "Arizona"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which of the following buildings is example of a structure primarily built in the Art Deco architectural style?",
+      "correct_answer": "Niagara Mohawk Building",
+      "incorrect_answers": [
+        "Taipei 101",
+        "One Detroit Center",
+        "Westendstrasse 1"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In World of Warcraft lore, who was first to have the title &quot;The Ashbringer&quot;?",
+      "correct_answer": "Alexandros Mograine",
+      "incorrect_answers": [
+        "Tirion Fordring",
+        "Arthas Menethil",
+        "Uther the Lightbringer"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "The term &quot;scientist&quot; was coined in which year?",
+      "correct_answer": "1833",
+      "incorrect_answers": [
+        "1933",
+        "1942",
+        "1796"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which musical artist was NOT featured as playable avatars in the game &quot;DJ Hero&quot;?",
+      "correct_answer": "Dr. Dre",
+      "incorrect_answers": [
+        "DJ Shadow",
+        "Daft Punk",
+        "Grandmaster Flash"
+      ]
+    },
+    {
+      "category": "Entertainment: Comics",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which of the following superheros did Wonder Woman NOT have a love interest in?",
+      "correct_answer": "Green Arrow",
+      "incorrect_answers": [
+        "Superman",
+        "Batman",
+        "Steve Trevor"
+      ]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who played Sgt. Gordon Elias in &#039;Platoon&#039; (1986)?",
+      "correct_answer": "Willem Dafoe",
+      "incorrect_answers": [
+        "Charlie Sheen",
+        "Matt Damon",
+        "Johnny Depp"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "When was Final Fantasy XV released?",
+      "correct_answer": "November 29th, 2016",
+      "incorrect_answers": [
+        "October 25th, 2016",
+        "December 31th, 2016",
+        "November 30th, 2016"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which of these songs does NOT play during the Ruins segments of the 2015 game &quot;Undertale&quot;?",
+      "correct_answer": "Another Medium",
+      "incorrect_answers": [
+        "Anticipation",
+        "Unnecessary Tension",
+        "Ruins"
+      ]
+    },
+    {
+      "category": "Science & Nature",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who made the discovery of X-rays?",
+      "correct_answer": "Wilhelm Conrad R&ouml;ntgen",
+      "incorrect_answers": [
+        "Thomas Alva Edison",
+        "James Watt",
+        "Albert Einstein"
+      ]
+    },
+    {
+      "category": "Science: Gadgets",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who patented a steam engine that produced continuous rotary motion?",
+      "correct_answer": "James Watt",
+      "incorrect_answers": [
+        "Nikola Tesla",
+        "Albert Einstein",
+        "Alessandro Volta"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which of the following anime of the mecha genre began airing in 1982?",
+      "correct_answer": "The Super Dimension Fortress Macross",
+      "incorrect_answers": [
+        "Mobile Suit Gundam",
+        "Armored Trooper VOTOMS",
+        "Neon Genesis Evangelion"
+      ]
+    },
+    {
+      "category": "Geography",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the busiest port in Europe?",
+      "correct_answer": "Port of Rotterdam",
+      "incorrect_answers": [
+        "Port of Antwerp",
+        "Port of Hamburg",
+        "Port of Amsterdam"
+      ]
+    },
+    {
+      "category": "Geography",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which Canadian province has Charlottetown as its capital?",
+      "correct_answer": "Prince Edward Island",
+      "incorrect_answers": [
+        "Saskachewan",
+        "Northwest Terrirories",
+        "Ontario"
+      ]
+    },
+    {
+      "category": "History",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "When did the United States formally declare war on Japan, entering World War II?",
+      "correct_answer": "December 8, 1941",
+      "incorrect_answers": [
+        "June 6, 1944",
+        "June 22, 1941",
+        "September 1, 1939"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In The Elder Scrolls V: Skyrim, who is the jester in the dark brotherhood?",
+      "correct_answer": "Cicero",
+      "incorrect_answers": [
+        "Lucien Lachance",
+        "Archimedes",
+        "Astrid"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What sport is being played in the Anime Eyeshield 21?",
+      "correct_answer": "American Football",
+      "incorrect_answers": [
+        "Baseball",
+        "Football",
+        "Basketball"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the first track on Kanye West&#039;s 808s &amp; Heartbreak?",
+      "correct_answer": "Say You Will",
+      "incorrect_answers": [
+        "Welcome to Heartbreak",
+        "Street Lights",
+        "Heartless"
+      ]
+    },
+    {
+      "category": "Entertainment: Board Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In Yu-Gi-Oh, how does a player perform an Xyz Summon?",
+      "correct_answer": "Overlay at least 2 Monsters of the Same Level",
+      "incorrect_answers": [
+        "Activate a Spell and Send Monsters to the Graveyard",
+        "Add the Monsters&#039; Levels Together to Match the Xyz Monster",
+        "Banish A Number of Monsters From Your Hand And Deck"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In &quot;Fallout 4&quot;, what is the name of the dog you find at Red Rocket truck stop?",
+      "correct_answer": "Dogmeat",
+      "incorrect_answers": [
+        "Sparky",
+        "Quazar",
+        "Chop"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In Terraria, which of these items is NOT crafted at a Mythril Anvil?",
+      "correct_answer": "Ankh Charm",
+      "incorrect_answers": [
+        "Venom Staff",
+        "Sky Fracture",
+        "Orichalcum Tools"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of the common, gun-toting enemies of the &quot;Oddworld&quot; video game series?",
+      "correct_answer": "Sligs",
+      "incorrect_answers": [
+        "Scrabs",
+        "Slogs",
+        "Glukkons"
+      ]
+    },
+    {
+      "category": "Geography",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Broome is a town in which state of Australia?",
+      "correct_answer": "Western Australia",
+      "incorrect_answers": [
+        "Northern Territory",
+        "South Australia",
+        "Tasmania"
+      ]
+    },
+    {
+      "category": "Entertainment: Cartoon & Animations",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Adam West was the mayor of which cartoon town?",
+      "correct_answer": "Quahog",
+      "incorrect_answers": [
+        "Springfield",
+        "South Park",
+        "Langley Falls"
+      ]
+    },
+    {
+      "category": "Geography",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Where is the &quot;Sonoran Desert&quot; located?",
+      "correct_answer": "North America",
+      "incorrect_answers": [
+        "South America",
+        "Asia",
+        "Africa"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the beginning of the game &quot;Sonic Adventure&quot;, what color Chaos Emerald does Tails own?",
+      "correct_answer": "Purple",
+      "incorrect_answers": [
+        "Red",
+        "Green",
+        "Blue"
+      ]
+    },
+    {
+      "category": "Entertainment: Television",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In Battlestar Galactica (2004), what is the name of the President of the Twelve Colonies?",
+      "correct_answer": "Laura Roslin",
+      "incorrect_answers": [
+        "William Adama",
+        "Tricia Helfer",
+        "Harry Stills"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What is the name of Joel&#039;s daughter in the game, &quot;The Last of Us&quot;? ",
+      "correct_answer": "Sarah",
+      "incorrect_answers": [
+        "Ellie",
+        "Tess",
+        "Marlene"
+      ]
+    },
+    {
+      "category": "Entertainment: Cartoon & Animations",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "How many episodes were in season five of Samurai Jack?",
+      "correct_answer": "10",
+      "incorrect_answers": [
+        "12",
+        "11",
+        "13"
+      ]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which former Star Trek actor directed Three Men and a Baby (1987)?",
+      "correct_answer": "Leonard Nimoy",
+      "incorrect_answers": [
+        "William Shatner",
+        "George Takei",
+        "James Doohan"
+      ]
+    }
+  ]
+}
