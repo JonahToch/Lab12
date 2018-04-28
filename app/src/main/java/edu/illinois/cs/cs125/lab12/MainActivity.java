@@ -14,13 +14,13 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import com.google.gson.*;
-
-import java.lang.reflect.Array;
+import org.json.JSONArray;
+import java.io.*;
 
 /**
  * Main class for our UI design lab.
@@ -49,8 +49,11 @@ public final class MainActivity extends AppCompatActivity {
         requestQueue = Volley.newRequestQueue(this);
 
         setContentView(R.layout.activity_main);
-
-        startAPICall();
+        try {
+            startAPICall();
+        } catch (FileNotFoundException e) {
+            ;
+        }
 
         final Button startAPICall = findViewById(R.id.answerC);
         startAPICall.setOnClickListener(new View.OnClickListener() {
@@ -62,7 +65,7 @@ public final class MainActivity extends AppCompatActivity {
 
         final TextView chooseQuestion = findViewById(R.id.question);
         JsonParser parser = new JsonParser();
-        // JsonObject results = parser.parse("triviatext").getAsJsonObject(); this line does not work yet. try to get parsing to work whether it is from the website API or from triviatext.txt under app in documents.
+        // JsonObject results = parser.parse("triviatext").getAsJsonObject();
         // JsonArray questions = results.getAsJsonArray("question");
         // String questionString = questions.get(0).getAsJsonObject().getAsString();
 
@@ -101,30 +104,17 @@ public final class MainActivity extends AppCompatActivity {
 
     /**
      * Make a call to the weather API.
+     * @throws FileNotFoundException lol
      */
-    void startAPICall() {
-        try {
-            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
-                    Request.Method.GET,
-                    "https://opentdb.com/api.php?amount=50&difficulty=medium&type=multiple",
-                    null,
-                    new Response.Listener<JSONObject>() {
-                        @Override
-                        public void onResponse(final JSONObject response) {
-                            try {
-                                Log.d(TAG, response.toString(2));
-                            } catch (JSONException ignored) {
-                            }
-                        }
-                    }, new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(final VolleyError error) {
-                    Log.e(TAG, error.toString());
-                }
-            });
-            requestQueue.add(jsonObjectRequest);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    void startAPICall() throws FileNotFoundException {
+        JsonParser parser = new JsonParser();
+        JsonObject triviaTextArray = (JsonObject) parser.parse(new FileReader("C:\\Users\\Brand2ss\\Downloads"));
+        JsonObject triviaResults = triviaTextArray.getAsJsonArray("results").get(0).getAsJsonObject();
+        JsonObject triviaQuestion = triviaResults.getAsJsonObject("question");
+        String question = triviaQuestion.getAsString();
+
+        setContentView(R.layout.activity_main);
+        final TextView helloTextView = (TextView) findViewById(R.id.question);
+        helloTextView.setText(question);
     }
 }
